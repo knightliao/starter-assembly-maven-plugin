@@ -1,6 +1,6 @@
 # starter-assembly-maven-plugin
 
-assembly maven plugin for java projects. Java项目的打包插件
+assembly maven plugin for java projects / Java项目的打包插件
 
 ## demo
 
@@ -80,8 +80,8 @@ mvn clean package starter:bin
 
 其中
 
-- start.sh 是开始脚本
-- stop.sh 是关闭脚本
+- start.sh 是开始脚本, 插件自动生成的
+- stop.sh 是关闭脚本, 插件自动生成的
 - lib 包含所有jar包
 - conf 包含所有配置
 
@@ -101,7 +101,10 @@ mvn clean package starter:bin
     export JAVA_OPTS="$JAVA_OPTS -XX:+PrintGCDetails -XX:+PrintGCTimeStamps"
     export JAVA_OPTS="$JAVA_OPTS -Dlogback.configurationFile=file:conf/logback.xml"
 
-需要设置 BUNDLE_JAR_NAME ，否则 start.sh 无法启动
+其中
+
+- 必须设置 BUNDLE_JAR_NAME ，否则 start.sh 无法启动
+- 其它参数可配
 
 #### third
 
