@@ -10,9 +10,15 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>maven-plugin</packaging>
 
-    <properties>
-        <project.test.skip>true</project.test.skip>
-    </properties>
+    <description>https://github.com/knightliao/starter-assembly-maven-plugin</description>
+    <licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
 
     <dependencies>
 
@@ -164,7 +170,6 @@
 
     <url>https://github.com/knightliao/starter-assembly-maven-plugin</url>
     <name>starter-assembly-maven-plugin</name>
-    <description>starter-assembly-maven-plugin</description>
 
     <profiles>
         <profile>
