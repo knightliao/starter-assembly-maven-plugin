@@ -113,8 +113,6 @@ public class StarterBin extends BaseStarterMojo {
             }
         }
 
-        super.execute();
-
         //
         // dependency
         //
@@ -130,6 +128,8 @@ public class StarterBin extends BaseStarterMojo {
         MavenFileUtils
                 .copyFile(project, libFolder, project.getArtifact().getFile(), project.getArtifact().getFile().getName
                         ());
+
+        super.execute();
     }
 
 }

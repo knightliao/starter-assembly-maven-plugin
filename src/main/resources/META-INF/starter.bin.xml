@@ -30,14 +30,11 @@
             <directory>${project.build.directory}/starter-run/conf/</directory>
             <outputDirectory>conf</outputDirectory>
         </fileSet>
-    </fileSets>
 
-    <dependencySets>
-        <dependencySet>
-            <useProjectArtifact>true</useProjectArtifact>
+        <fileSet>
+            <directory>${project.build.directory}/starter-run/lib/</directory>
             <outputDirectory>lib</outputDirectory>
-            <scope>runtime</scope>
-        </dependencySet>
-    </dependencySets>
+        </fileSet>
+    </fileSets>
 
 </assembly>
