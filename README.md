@@ -2,6 +2,12 @@
 
 assembly maven plugin for java projects / Java项目的打包插件
 
+## 特点
+
+- 简单、方便
+- 自动生成start.sh, stop.sh
+- 自动生成部署环境，并自动将部署环境打成tar.gz包
+
 ## demo
 
 https://github.com/knightliao/starter-assembly-demo
@@ -65,7 +71,7 @@ mvn clean package starter:bin
 
 其中
 
-- starter-run 是包含所有可执行脚本以及jar包的文件目录 
+- starter-run 是可部署的环境，包含所有可执行脚本以及jar包的文件目录 
 - starter-assembly-demo.tar.gz 是对 starter-run 目录的打包
 
 #### starter-run目录
