@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.3"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.3 http://maven.apache.org/xsd/assembly-1.1.3.xsd">
+
+    <id>starter-assembly-maven-plugin.bin</id>
+
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+
+    <includeBaseDirectory>false</includeBaseDirectory>
+
+    <files>
+        <file>
+            <source>${project.build.directory}/starter-run/start.sh</source>
+        </file>
+        <file>
+            <source>${project.build.directory}/starter-run/stop.sh</source>
+        </file>
+    </files>
+
+    <fileSets>
+        <fileSet>
+            <directory>src/main/webapp</directory>
+            <outputDirectory>webapp</outputDirectory>
+        </fileSet>
+
+        <fileSet>
+            <directory>${project.build.directory}/starter-run/conf/</directory>
+            <outputDirectory>conf</outputDirectory>
+        </fileSet>
+    </fileSets>
+
+    <dependencySets>
+        <dependencySet>
+            <useProjectArtifact>true</useProjectArtifact>
+            <outputDirectory>lib</outputDirectory>
+            <scope>runtime</scope>
+        </dependencySet>
+    </dependencySets>
+
+</assembly>
