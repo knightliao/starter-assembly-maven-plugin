@@ -15,7 +15,7 @@ https://github.com/knightliao/starter-assembly-demo
 ## 使用方式
 
     <build>
-
+    
         <finalName>starter-assembly-demo</finalName>
         <resources>
             <resource>
@@ -38,7 +38,7 @@ https://github.com/knightliao/starter-assembly-demo
             </plugin>
 
             <plugin>
-                <groupId>com.knightliao.plugin</groupId>
+                <groupId>com.github.knightliao.plugin</groupId>
                 <artifactId>starter-assembly-maven-plugin</artifactId>
                 <version>1.0.0-SNAPSHOT</version>
                 <configuration>
