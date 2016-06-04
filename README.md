@@ -40,7 +40,7 @@ https://github.com/knightliao/starter-assembly-demo
             <plugin>
                 <groupId>com.github.knightliao.plugin</groupId>
                 <artifactId>starter-assembly-maven-plugin</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
+                <version>1.0.0</version>
                 <configuration>
                     <appendAssemblyId>false</appendAssemblyId>
                     <finalName>${project.build.finalName}</finalName>
