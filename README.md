@@ -10,7 +10,7 @@ assembly maven plugin for java projects / Java项目的打包插件
 
 ## demo
 
-https://github.com/knightliao/starter-assembly-demo
+demos/starter-assembly-demo
 
 ## 使用方式
 
